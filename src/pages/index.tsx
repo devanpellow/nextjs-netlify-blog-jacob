@@ -27,7 +27,7 @@ export default function Index() {
 			<style jsx>{`
 				.container {
 					display: flex;
-					align-items: center;
+					/* align-items: center; */
 					justify-content: center;
 					flex: 1 1 auto;
 					padding: 0 1.5rem;
@@ -48,7 +48,7 @@ export default function Index() {
 				.handle {
 					display: inline-block;
 					margin-top: 0.275em;
-					color: #9b9b9b;
+					/* color: #9b9b9b; */
 					letter-spacing: 0.05em;
 				}
 

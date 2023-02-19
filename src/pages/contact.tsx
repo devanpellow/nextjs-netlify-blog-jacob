@@ -13,13 +13,17 @@ export default function Contact() {
 			<div className="container">
 				<div>
 					<h1>
-						<span className="fancy">Jacob</span> Robinson<span className="fancy">.</span>
+						<span className="fancy">Jacob</span> Robinson
+						<span className="fancy">.</span>
 					</h1>
 					<span className="handle">@JacobRobinsonJD</span>
-					<h2>
-						Learning, writing and advising on the laws of crypto, NFTs & DAOs.
-						Host @ Law of Code.
-					</h2>
+					<div className="">
+						<h2>
+							Learning, writing and advising on the laws of crypto, NFTs & DAOs.
+							Host @ Law of Code.
+						</h2>
+					</div>
+					<div className="text-2xl text-red-600">hello</div>
 					<SocialList />
 				</div>
 			</div>
