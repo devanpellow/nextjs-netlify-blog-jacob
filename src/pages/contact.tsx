@@ -4,7 +4,7 @@ import OpenGraphMeta from '../components/meta/OpenGraphMeta';
 import TwitterCardMeta from '../components/meta/TwitterCardMeta';
 import { SocialList } from '../components/SocialList';
 
-export default function Index() {
+export default function Contact() {
 	return (
 		<Layout>
 			<BasicMeta url={'/'} />
@@ -13,8 +13,7 @@ export default function Index() {
 			<div className="container">
 				<div>
 					<h1>
-						<span className="fancy">Jacob</span> Robinson
-						<span className="fancy">.</span>
+						<span className="fancy">Jacob</span> Robinson<span className="fancy">.</span>
 					</h1>
 					<span className="handle">@JacobRobinsonJD</span>
 					<h2>
