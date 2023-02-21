@@ -100,7 +100,7 @@ export default function Contact() {
 				form {
 					display: flex;
 					flex-direction: column;
-					width: 80%;
+					width: 60%;
 				}
 
 				.form-group {
