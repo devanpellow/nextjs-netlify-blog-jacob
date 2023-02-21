@@ -11,7 +11,7 @@ export default function Contact() {
 			<OpenGraphMeta url={'/'} />
 			<TwitterCardMeta url={'/'} />
 			<div className="container">
-				<div>
+				<div className="full-width">
 					<h1>
 						<span className="fancy">Jacob</span> Robinson
 						<span className="fancy">.</span>
@@ -55,10 +55,10 @@ export default function Contact() {
 			<style jsx>{`
 				.container {
 					display: flex;
-
 					flex: 1 1 auto;
 					padding: 0 4rem;
 					max-width: 80vw;
+					min-width: 80vw;
 				}
 				h1 {
 					font-size: 2.5rem;
@@ -80,17 +80,21 @@ export default function Contact() {
 					letter-spacing: 0.05em;
 				}
 
+				.full-width {
+					width: 100%;
+				}
+
 				.contact-container {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: start;
 					margin: 80px 0;
 				}
 
 				form {
 					display: flex;
 					flex-direction: column;
-					width: 100%;
+					width: 80%;
 				}
 
 				.form-group {
