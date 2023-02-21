@@ -19,8 +19,13 @@ export default function Contact() {
 					<span className="handle">@JacobRobinsonJD</span>
 					<SocialList />
 					<div className="contact-container">
-						<form name="contact" method="POST" data-netlify="true">
-                        <input type="hidden" name="form-name" value="contact" />
+						<form
+							name="contact"
+							method="POST"
+							data-netlify="true"
+							action="/form-success"
+						>
+							<input type="hidden" name="form-name" value="contact" />
 							<div className="form-group">
 								<input
 									type="text"
