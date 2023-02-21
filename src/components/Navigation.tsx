@@ -51,7 +51,7 @@ export default function Navigation() {
               text-align: right;
               list-style: none;
               margin: 0;
-              padding: 0;
+              padding: 15px 0;
               position: fixed;
               top: 0;
               background-color: #fff;

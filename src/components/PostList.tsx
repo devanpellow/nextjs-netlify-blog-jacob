@@ -41,13 +41,12 @@ export default function PostList({ posts, tags, pagination }: Props) {
         ))}
       </ul>
       <style jsx>{`
-        .container {
-          display: flex;
-          margin: 0 auto;
-          max-width: 1200px;
-          width: 100%;
-          padding: 0 1.5rem;
-        }
+      		.container {
+					display: flex;
+					flex: 1 1 auto;
+					padding: 0 4rem;
+          max-width: 80vw;
+				}
         ul {
           margin: 0;
           padding: 0;

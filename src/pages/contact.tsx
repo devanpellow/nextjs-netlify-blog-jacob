@@ -17,23 +17,48 @@ export default function Contact() {
 						<span className="fancy">.</span>
 					</h1>
 					<span className="handle">@JacobRobinsonJD</span>
-					<div className="">
-						<h2>
-							Learning, writing and advising on the laws of crypto, NFTs & DAOs.
-							Host @ Law of Code.
-						</h2>
-					</div>
-					<div className="text-2xl text-red-600">hello</div>
 					<SocialList />
+					<div className="contact-container">
+						<form name="contact" method="POST" data-netlify="true">
+							<div className="form-group">
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Name"
+									required
+								/>
+							</div>
+							<div className="form-group">
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Email"
+									required
+								/>
+							</div>
+							<div className="form-group">
+								<textarea
+									id="message"
+									name="message"
+									rows={5}
+									required
+									placeholder="Message"
+								></textarea>
+							</div>
+							<button type="submit">Send</button>
+						</form>
+					</div>
 				</div>
 			</div>
 			<style jsx>{`
 				.container {
 					display: flex;
-					align-items: center;
-					justify-content: center;
+
 					flex: 1 1 auto;
-					padding: 0 1.5rem;
+					padding: 0 4rem;
+					max-width: 80vw;
 				}
 				h1 {
 					font-size: 2.5rem;
@@ -53,6 +78,53 @@ export default function Contact() {
 					margin-top: 0.275em;
 					color: #9b9b9b;
 					letter-spacing: 0.05em;
+				}
+
+				.contact-container {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 80px 0;
+				}
+
+				form {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+				}
+
+				.form-group {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 1rem;
+				}
+
+				label {
+					font-size: 1.2rem;
+					margin-bottom: 0.5rem;
+				}
+
+				input,
+				textarea {
+					padding: 0.5rem;
+					border: 1px solid #ccc;
+					border-radius: 5px;
+					font-size: 1rem;
+				}
+
+				button[type='submit'] {
+					background-color: #9d2828;
+					color: #fff;
+					border: none;
+					border-radius: 5px;
+					padding: 1rem;
+					font-size: 1.2rem;
+					margin-top: 1rem;
+					cursor: pointer;
+				}
+
+				button[type='submit']:hover {
+					background-color: #7d2121;
 				}
 
 				@media (min-width: 769px) {
